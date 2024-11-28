@@ -21,3 +21,15 @@ void Toggle_Green(){
 	HAL_GPIO_TogglePin(Led_Green_GPIO_Port, Led_Green_Pin);
 }
 
+
+void Toggle_Red2(){
+	HAL_GPIO_TogglePin(Led_Red2_GPIO_Port, Led_Red2_Pin);
+}
+
+void Toggle_Yellow2(){
+	HAL_GPIO_TogglePin(Led_Yellow2_GPIO_Port, Led_Yellow2_Pin);
+}
+
+void Toggle_Green2(){
+	HAL_GPIO_TogglePin(Led_Green2_GPIO_Port, Led_Green2_Pin);
+}

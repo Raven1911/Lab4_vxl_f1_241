@@ -92,10 +92,14 @@ int main(void)
   /* USER CODE BEGIN 2 */
   SCH_init();
 
-
+  ///Add_Task
   SCH_Add_Task(Toggle_Red, 50, 50);
-  SCH_Add_Task(Toggle_Yellow, 200, 100);
-  SCH_Add_Task(Toggle_Green, 100, 200);
+  SCH_Add_Task(Toggle_Yellow, 100, 100);
+  SCH_Add_Task(Toggle_Green, 150, 150);
+
+  SCH_Add_Task(Toggle_Red2, 200, 200);
+  SCH_Add_Task(Toggle_Yellow2, 250, 250);
+  SCH_Add_Task(Toggle_Green2, 300, 300);
 
   /* USER CODE END 2 */
 

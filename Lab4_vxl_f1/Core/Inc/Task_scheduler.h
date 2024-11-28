@@ -14,4 +14,12 @@
 void Toggle_Red();
 void Toggle_Yellow();
 void Toggle_Green();
+
+void Toggle_Red2();
+void Toggle_Yellow2();
+void Toggle_Green2();
+
+
+//Trafic_function
+
 #endif /* INC_TASK_SCHEDULER_H_ */

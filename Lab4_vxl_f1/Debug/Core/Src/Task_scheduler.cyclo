@@ -1,3 +1,6 @@
 ../Core/Src/Task_scheduler.c:12:6:Toggle_Red	1
 ../Core/Src/Task_scheduler.c:16:6:Toggle_Yellow	1
 ../Core/Src/Task_scheduler.c:20:6:Toggle_Green	1
+../Core/Src/Task_scheduler.c:25:6:Toggle_Red2	1
+../Core/Src/Task_scheduler.c:29:6:Toggle_Yellow2	1
+../Core/Src/Task_scheduler.c:33:6:Toggle_Green2	1
