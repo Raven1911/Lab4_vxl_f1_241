@@ -19,7 +19,6 @@ typedef struct STask{
 	uint32_t Period;
 	uint8_t RunMe;
 	uint32_t TaskID;
-
 	struct STask* next;
 }STask;
 
@@ -27,8 +26,8 @@ typedef struct STask{
 
 
 typedef struct Container{
-	unsigned char empty_Slot;
-	unsigned char num_Task;
+	unsigned char emptySlot;
+	unsigned char numTask;
 	struct STask* tail;
 } Container;
 
@@ -39,7 +38,7 @@ STask* add_Node(void(*pFunction)(), uint32_t Delay, uint32_t Period);
 
 void SCH_init(void);
 void SCH_Update_Task(void);
-void SCH_Add_Task(void(*pFunction)(), uint32_t Delay, uint32_t Period);
+void SCH_Add_Task(void(*pFunction)(), uint32_t DELAY, uint32_t PERIOD);
 void SCH_Delete_Task(void);
 void SCH_Dispatch_Task(void);
 

@@ -41,10 +41,11 @@ void timer_run(uint8_t index){
 ///////////////////////////////////////////////////////////
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 	if(htim->Instance == TIM2){
-		for(int i = 0; i < 10; i++){
-			timer_run(i);
-		}
+//		for(int i = 0; i < 10; i++){
+//			timer_run(i);
+//		}
 		//getKeyInput();
+		SCH_Update_Task();
 
 	}
 

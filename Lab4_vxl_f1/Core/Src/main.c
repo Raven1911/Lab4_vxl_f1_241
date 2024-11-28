@@ -19,10 +19,12 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "tim.h"
+#include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "scheduler.h"
+#include "Task_scheduler.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -85,8 +87,15 @@ int main(void)
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
+  MX_GPIO_Init();
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
+  SCH_init();
+
+
+  SCH_Add_Task(Toggle_Red, 50, 50);
+  SCH_Add_Task(Toggle_Yellow, 200, 100);
+  SCH_Add_Task(Toggle_Green, 100, 200);
 
   /* USER CODE END 2 */
 
@@ -97,6 +106,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	  SCH_Dispatch_Task();
   }
   /* USER CODE END 3 */
 }
